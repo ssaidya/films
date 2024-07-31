@@ -1,0 +1,143 @@
+@media (max-width: 1400px) {
+  .video {
+    height: auto;
+  }
+}
+@media (max-width: 1200px) {
+  .container {
+    max-width: 960px;
+  }
+  .bockses {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .card {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media (max-width: 992px) {
+  .container {
+    max-width: 720px;
+  }
+  .nav_link::after {
+    display: none;
+  }
+  .nav_btn {
+    display: block;
+  }
+  .list {
+    gap: 20px;
+    position: fixed;
+    top: 0;
+    flex-direction: column;
+    height: 100dvh;
+    width: 50%;
+    justify-content: space-evenly;
+    align-items: center;
+    background: black;
+    z-index: 11;
+    right: -100%;
+    height: 100%;
+    transition: 0.5s;
+
+    &.active {
+      right: 0;
+    }
+  }
+  .img {
+    height: 550px;
+  }
+
+  .footer_content {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .serias_item-text {
+    margin: 20px 0;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    max-width: 540px;
+  }
+
+  .list {
+    width: 100%;
+    background: #000000f5;
+  }
+  .series_item:nth-of-type(3) {
+    grid-column: 3/5;
+  }
+  .series_item:nth-of-type(4) {
+    grid-column: 3/5;
+  }
+  .series_item:nth-of-type(5) {
+    grid-column: 1/3;
+  }
+  .series_item:nth-of-type(6) {
+    grid-column: 3/5;
+  }
+}
+@media (max-width: 576px) {
+  .container {
+    max-width: 100%;
+  }
+  .bg_text {
+    margin: 20px 0;
+  }
+  .header_title {
+    line-height: 40px;
+  }
+  .img {
+    height: 450px;
+  }
+
+  .Films,
+  .collections {
+    padding: 40px 0;
+  }
+
+  .card,
+  .bockses {
+    margin-top: 30px;
+  }
+}
+@media (max-width: 450px) {
+  .square {
+    width: 17px;
+    height: 22px;
+  }
+
+  .bg_text {
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 5;
+  }
+  .series_item-text {
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+  }
+  .series_item:nth-of-type(1) {
+    height: 400px;
+  }
+}
+@media (max-width: 400px) {
+  .collections_img {
+    width: 100%;
+  }
+
+  .series_items {
+    display: flex;
+    flex-direction: column;
+  }
+  .series_item {
+    height: 180px;
+  }
+  .serias_item-img {
+    object-position: top;
+  }
+}
