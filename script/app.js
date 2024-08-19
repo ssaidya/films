@@ -26,3 +26,8 @@ for (let i = 0; i < navLink.length; i++) {
     body.classList.remove("active");
   });
 }
+
+AOS.init({
+  offset: 150,
+  duration: 2000,
+});
